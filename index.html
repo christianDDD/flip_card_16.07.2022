@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flip Card "Méthodes des Tableaux"</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="shit.png" style="border-radius:50%; height:50px; width:50px;">
+        <h1>What The Fuck</h1>
+        <ul>
+            <li><a href="https://www.wikipedia.org" target="_blank">Home</a></li>
+            <li><a href="#">Html</a></li>
+            <li><a href="#">Css</a></li>
+            <li><a href="#">JavaScript</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 class="header__text">Cardes Mémoires JavaScript : Array - Méthodes</h1>
+        <p>(CSS Grid <span class="header__explique">"header side-effects"</span> with ::before &amp; ::after pseudo
+            éléments)</p>
+    </header>
+    <div class="super__container">
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-1">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>concat ()</h1>
+                        <hr>
+                        <p class="para__format-front">Un nouveau tableau formé du tableau courant avec un ou plusieurs
+                            autres tableaux, et/ou valeurs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-1">
+                    <h3>Exemple : concat ()</h3>
+                    <p class="para__format-back"> const numb1 = [1, 2, 3]; </p>
+                    <p class="para__format-back">const letter = ['a', 'b', 'c']; </p>
+                    <p class="para__format-back">const numb2 = [4, 5, 6];</p>
+
+                    <p class="para__format-back">
+                        const numb3 = numb1.concat(letter);
+                    <p class="para__format-back console_bottom">
+                        console.log(numb3);
+                    </p>
+                    <p class="para__format-back">
+                        Array(6) [ 1, 2, 3, "a", "b", "c" ]
+                    </p>
+                    <p class="para__format-back">
+                        const numb4 = numb1.concat('letter', 'food', 'Gesi');
+                    </p>
+                    <p class="para__format-back console_bottom">
+                        console.log(numb4);
+                        : </p>
+                    <p class="para__format-back">
+                        Array(8) [ 1, 2, 3, "a", "b", "c", "letter", "food", "Gesi" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-2">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>join ()</h1>
+                        <hr>
+                        <p class="para__format-front"> Joint tous les éléments du tableau courant et les retourne en une
+                            seule chaîne avec le séparateur choisi.</p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-2">
+                    <h3>Exemple : join ()</h3>
+                    <p class="para__format-back">const arrUno = ["Joint", "les", "éléments", "d'un", "tableau", "avec",
+                        "le séparateur", "choisi"];
+                    </p>
+                    <p class="para__format-back console_bottom">
+                        console.log(arrUno);
+                    </p>
+                    <p class="para__format-back">
+                        Array(7) [ "Joint", "les", "éléments", "d'un", "tableau", "avec", "le séparator", "choisi" ]</p>
+                    <p class="para__format-back">
+                        var chaineUno = arrUno.join('+');</p>
+                    <p class="para__format-back console_bottom">
+                        console.log(chaineUno);
+                    </p>
+                    <p class="para__format-back">
+                        Joint+les+éléments+d'un+tableau+avec+le séparator+choisi
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-3">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>sort ()</h1>
+                        <hr>
+                        <p class="para__format-front">Retourne un tableau une fois les éléments du tableau courant triés
+                            (le tri par défaut est alphabéique et ascendant).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-3">
+                    <h3>Exemple : sort ()</h3>
+                    <p class="para__format-back">const upSort = ["le tri", "par défaut", "est alphabéique", "et
+                        ascendant"];</p>
+                    <p class="para__format-back console_bottom">console.log(upSort);</p>
+                    <p class="para__format-back">Array(4) [ "le tri", "par défaut", "est alphabéique", "et ascendant" ]
+                    </p>
+                    <p class="para__format-back">upSort.sort();</p>
+                    <p class="para__format-back">// Attention aux majuscule / miniscule de la premiére lettre du mot</p>
+                    <p class="para__format-back">Array(4) [ "est alphabéique", "et ascendant", "le tri", "par défaut" ]
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-4">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>toString ()</h1>
+                        <hr>
+                        <p class="para__format-front"> Convertit un tableau en chaîne de caractères et retourne la
+                            chaîne.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-4">
+                    <h3>Exemple : toString ()</h3>
+                    <p class="para__format-back">const arrUn = ["Convertit", "un", "tableau", "en", "chaîne", "de",
+                        "caractères"];</p>
+
+                    <p class="para__format-back console_bottom">console.log(arrUn.toString());</p>
+                    <p class="para__format-back">Convertit,un,tableau,en,chaîne,de,caractères</p>
+                    <p class="para__format-back console_bottom">console.log(arrUn);</p>
+                    <p class="para__format-back">Array(7) [ "Convertit", "un", "tableau", "en", "chaîne", "de",
+                        "caractères" ]</p>
+
+                    <p class="para__format-back">var arrDeux = arrUn.toString();</p>
+                    <p class="para__format-back console_bottom">console.log(arrDeux);</p>
+
+                    <p class="para__format-back">Convertit,un,tableau,en,chaîne,de,caractères </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-5">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>unshift ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Retourne un nouveau tableau avec une nouvelle longueur par ajout d'un ou plusieurs éléments
+                            au début <br />du tableau.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-5">
+                    <h3>Exemple : unshift ()</h3>
+                    <p class="para__format-back">const ajout = ["Retourne", "un nouveau", "tableau", "avec une",
+                        "nouvelle longueur", "par ajout d'un ou", "plusieurs éléments"];</p>
+
+                    <p class="para__format-back console_bottom">console.log(ajout);</p>
+                    <p class="para__format-back">Array(7) [ "Retourne", "un nouveau", "tableau", "avec une", "nouvelle
+                        longueur", "par ajout d'un ou", "plusieurs éléments" ]</p>
+
+                    <p class="para__format-back">ajout.unshift("ajout1", "ajout2");</p>
+
+                    <p class="para__format-back console_bottom">console.log(ajout);</p>
+
+                    <p class="para__format-back">Array(9) [ "ajout1", "ajout2", "Retourne", "un nouveau", "tableau",
+                        "avec une", "nouvelle longueur", "par ajout d'un ", "ou plusieurs éléments" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-6">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>shift ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Supprime le premier élément d'un tableau et retourne cet élément.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-6">
+                    <h3>Exemple : shift ()</h3>
+                    <p class="para__format-back">
+                        const leftShift = ["Supprime", "le premier élément", "d'un tableau et", "retourne cet élément"];
+                    </p>
+
+                    <p class="para__format-back console_bottom">console.log(leftShift);</p>
+                    <p class="para__format-back">Array(4) [ "Supprime", "le premier élément", "d'un tableau et",
+                        "retourne cet élément" ]</p>
+
+                    <p class="para__format-back console_bottom">console.log(leftShift.shift());</p>
+                    <p class="para__format-back">Supprime</p>
+
+                    <p class="para__format-back console_bottom">console.log(leftShift);</p>
+                    <p class="para__format-back">Array(3) [ "le premier élément", "d'un tableau et", "retourne cet
+                        élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-7">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>pop ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Supprime le dernier élément d'un tableau et retourne cet élément.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-7">
+                    <h3>Exemple : pop ()</h3>
+                    <p class="para__format-back">
+                        const arrUn = ["Supprime", "le", "dernier", "élément", "d'un", "tableau"];</p>
+
+                    <p class="para__format-back console_bottom">console.log(arrUn);</p>
+
+                    <p class="para__format-back"> Array(6) [ "Supprime", "le", "dernier", "élément", "d'un","tableau" ]
+                    </p>
+
+                    <p class="para__format-back">arrUn.pop();</p>
+
+                    <p class="para__format-back console_bottom">console.log(arrUn);</p>
+
+                    <p class="para__format-back">Array(5) [ "Supprime", "le", "dernier", "élément", "d'un" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-8">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>push ()</h1>
+                        <hr>
+                        <p class="para__format-front">
+                            Ajout un ou plusieurs éléments à la fin du tableau courant et retourne sa longueur à jour.
+                            La longueur du tableau étant modifiée en concéquence.<br />(destructif)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-8">
+                    <h3>Exemple : push ()</h3>
+                    <p class="para__format-back">
+                        const rightShift = ["Ajout un", "ou plusieurs éléments", " à la fin du tableau courant", "et
+                        retourne sa longueur", "à jour"];</p>
+
+                    <p class="para__format-back">rightShift.push("avant dernier élément", "dernier élément");</p>
+
+                    <p class="para__format-back">7</p>
+
+                    <p class="para__format-back console_bottom">console.log(rightShift)</p>
+
+                    <p class="para__format-back">Array(7) [ "Ajout un", "ou plusieurs éléments", " à la fin du tableau
+                        courant", "et retourne sa longueur", "à jour", "avant dernier élément", "dernier élément" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main__container">
+
+            <div class="the__card-sides">
+
+                <div class="the__front-1">
+                    <div class="front">
+                        <h3>The Array methode : </h3>
+                        <hr>
+                        <h1>concat ()</h1>
+                        <hr>
+                        <p class="para__format-front">Un nouveau tableau formé du tableau courant avec un ou plusieurs
+                            autres tableaux, et/ou valeurs.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="format  the__back-1">
+                    <h3>Exemple : concat ()</h3>
+                    <p class="para__format-back"> const numb1 = [1, 2, 3]; </p>
+                    <p class="para__format-back">const letter = ['a', 'b', 'c']; </p>
+                    <p class="para__format-back">const numb2 = [4, 5, 6];</p>
+
+                    <p class="para__format-back">
+                        const numb3 = numb1.concat(letter);
+                    <p class="para__format-back console_bottom">
+                        console.log(numb3);
+                    </p>
+                    <p class="para__format-back">
+                        Array(6) [ 1, 2, 3, "a", "b", "c" ]
+                    </p>
+                    <p class="para__format-back">
+                        const numb4 = numb1.concat('letter', 'food', 'Gesi');
+                    </p>
+                    <p class="para__format-back console_bottom">
+                        console.log(numb4);
+                        : </p>
+                    <p class="para__format-back">
+                        Array(8) [ 1, 2, 3, "a", "b", "c", "letter", "food", "Gesi" ]
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="toTop">
+        <button class="btn__toTop">
+            <a href="#">I push you to the TOP</a>
+        </button>
+    </div>
+</body>
+
+</html>
